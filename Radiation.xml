@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<style>
+  <Override>
+    <RadiationAnimSpriteSheet columns="8" rows="2" texture="%ModDir%/Radiation Border.png" />
+  </Override>
+</style>

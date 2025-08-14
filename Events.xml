@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Randomevents>
+  <EventPrefabs>
+    <ScriptedEvent identifier="Test campaign metadata" commonness="0">
+      <CheckDataAction identifier="CurrentLocationIrradiation" condition="gt 0">
+        <Success>
+          <CheckDataAction identifier="CurrentLocationIrradiation" condition="gt 100">
+            <Success>
+              <ConversationAction text="CurrentLocationIrradiation gt 100" endconversation="true" />
+            </Success>
+            <Failure>
+              <ConversationAction text="CurrentLocationIrradiation is between 0 and 100" endconversation="true" />
+            </Failure>
+          </CheckDataAction>
+        </Success>
+        <Failure>
+          <CheckDataAction identifier="CurrentLocationIrradiation" condition="gt -100">
+            <Success>
+              <ConversationAction text="CurrentLocationIrradiation is between -100 and 0" endconversation="true" />
+            </Success>
+            <Failure>
+              <ConversationAction text="CurrentLocationIrradiation lt -100" endconversation="true" />
+            </Failure>
+          </CheckDataAction>
+        </Failure>
+      </CheckDataAction>
+    </ScriptedEvent>
+  </EventPrefabs>
+</Randomevents>

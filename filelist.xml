@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Jovian Radiation Rework" modversion="3.2.2" corepackage="False" steamworkshopid="3269363928" gameversion="1.7.7.0" expectedhash="155C3B837038056A1D70A7501C1E4A0F">
+  <UIStyle file="%ModDir%/Radiation.xml" />
+  <RandomEvents file="%ModDir%/Events.xml" />
+  <Item file="%ModDir%/dummyitem.xml" />
+</contentpackage>
